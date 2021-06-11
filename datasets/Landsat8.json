@@ -14,5 +14,6 @@
           "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=s3://maap-ops-dataset/maap-users/alexdevseed/landsat8/viz/L8_tile_test.json&resampling_method=nearest&return_mask=true&bidx=6&rescale=0%2C1&colormap_name=viridis"
       ]
   },
+  "order": 3,
   "info": ""
 }
