@@ -1,0 +1,32 @@
+{
+  "id": "LANDSAT8",
+  "name": "Landsat Covariats",
+  "type": "raster-timeseries",
+  "time_unit": "day",
+  "is_periodic": false,
+  "swatch": {
+      "color": "#189C54",
+      "name": "Dark Green"
+  },
+  "source": {
+      "type": "raster",
+      "tiles": [
+          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=s3://maap-ops-dataset/maap-users/alexdevseed/landsat8/viz/L8_tile_test.json&resampling_method=nearest&return_mask=true&bidx=6&rescale=0%2C1&colormap_name=viridis"
+      ]
+  },
+  "legend": {
+      "type": "gradient-adjustable",
+      "min": "-20000",
+      "max": "0",
+      "stops": [
+          "#313695",
+          "#588cbf",
+          "#a3d2e5",
+          "#e8f6e8",
+          "#fee89c",
+          "#fba55c",
+          "#e24932"
+      ]
+  },
+  "info": ""
+}
