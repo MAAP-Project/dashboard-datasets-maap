@@ -1,7 +1,7 @@
 {
   "id": "LANDSAT8",
   "name": "Landsat Covariats",
-  "type": "raster-timeseries",
+  "type": "raster",
   "time_unit": "day",
   "is_periodic": false,
   "swatch": {
