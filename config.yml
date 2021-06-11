@@ -3,6 +3,6 @@ BUCKET: earthdata-dashboard
 DATASET_METADATA_FILENAME: dataset-metadata.json
 DATASETS:
   STATIC:
-  - MOD13A1.006.json # keeping this for now
   - ATL08.json
   - Landsat8.json
+  - topo.json

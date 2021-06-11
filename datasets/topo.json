@@ -1,0 +1,19 @@
+{
+  "id": "topo",
+  "name": "Topographic Elevation",
+  "type": "raster",
+  "time_unit": "day",
+  "is_periodic": false,
+  "swatch": {
+      "color": "#189C54",
+      "name": "Dark Green"
+  },
+  "source": {
+      "type": "raster",
+      "tiles": [
+          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=s3://maap-ops-dataset/maap-users/alexdevseed/landsat8/viz/topo_tile_test.json&bidx=2&resampling_method=nearest&rescale=0%2C30&return_mask=true&colormap_name=wistia"
+      ]
+  },
+  "legend": {},
+  "info": ""
+}
