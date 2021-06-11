@@ -18,7 +18,7 @@
         "circle-radius": 2,
         "circle-opacity": 0.7,
         "circle-color": {
-            "property": "Z",
+            "property": "HeightAboveGround",
             "stops": [
                 [
                     0,
