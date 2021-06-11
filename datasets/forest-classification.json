@@ -1,6 +1,6 @@
 {
-  "id": "biomass",
-  "name": "Measurements of biomass",
+  "id": "forest-classification",
+  "name": "Forest Classification",
   "type": "raster",
   "time_unit": "day",
   "is_periodic": false,
