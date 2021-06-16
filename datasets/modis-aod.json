@@ -1,0 +1,22 @@
+{
+    "id": "modis-aod",
+    "name": "MODIS Aerosol Optical Depth",
+    "type": "raster",
+    "time_unit": "day",
+    "is_periodic": "False",
+    "swatch": {
+        "color": "#189C54",
+        "name": "Dark Green"
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "{titiler_server_url}/cog/tiles/WebMercatorQuad/{z}/{x}/{y}.png?url=s3://modis-aod-nasa/2018.01.01.tif&resampling_method=nearest&bidx=1&rescale=0.02199999988079071,0.7147499918937683&colormap_name=gist_earth"
+        ]
+    },
+    "paint": {
+        "raster-opacity": "1"
+    },
+    "order": "100000",
+    "info": ""
+  }
