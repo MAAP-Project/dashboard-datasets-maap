@@ -1,0 +1,22 @@
+{
+  "id": "{{ dataset['id'] }}",
+  "name": "{{ dataset['name'] }}",
+  "type": "{{ dataset['type'] | default('raster') }}",
+  "time_unit": "{{ dataset['time_unit'] | default('day') }}",
+  "is_periodic": "{{ dataset['is_periodic'] | default(false) }}",
+  "swatch": {
+      "color": "{{ dataset['swatch.color'] | default('#189C54') }}",
+      "name": "{{ dataset['swatch.name'] | default('Dark Green')}}"
+  },
+  "source": {
+      "type": "{{ dataset['type'] | default('raster') }}",
+      "tiles": [
+          "{titiler_server_url}/{{ dataset['tiles']['tiler_path'] | default('cog/tiles/WebMercatorQuad') }}/{z}/{x}/{y}.png?url={{ dataset['tiles']['s3_url_and_parameters'] }}"
+      ]
+  },
+  "paint": {
+      "raster-opacity": "{{ dataset['paint']['raster_opacity'] | default(1) }}"
+  },
+  "order": "{{ dataset['order'] | default(100000) }}",
+  "info": "{{ dataset['info'] | default('') }}"
+}

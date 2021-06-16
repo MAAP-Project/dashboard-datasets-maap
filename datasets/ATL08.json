@@ -8,9 +8,9 @@
         "type": "vector",
         "layer_type": "circle",
         "source_layer": "atl08",
-        "source_url": "{vector_tileserver_url}/data/atl08.json",
+        "source_url": "{vector_tileserver_url}/atl08-mbtiles/atl08-updated",
         "tiles": [
-            "{vector_tileserver_url}/data/atl08/{z}/{x}/{y}.pbf"
+            "{vector_tileserver_url}/atl08-mbtiles/atl08-updated/tiles/{z}/{x}/{y}.pbf"
         ]
     },
     "info": "ATL08 data",
