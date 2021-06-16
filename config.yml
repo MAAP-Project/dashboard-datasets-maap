@@ -5,3 +5,4 @@ DATASETS:
   - ATL08.json
   - Landsat8.json
   - topo.json
+  - modis-aod.json
