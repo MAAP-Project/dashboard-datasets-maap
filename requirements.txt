@@ -1,3 +1,4 @@
 boto3==1.17.88
 PyYAML==5.4.1
 requests==2.25.1
+jinja2==2.11.3

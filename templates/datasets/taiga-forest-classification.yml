@@ -1,0 +1,31 @@
+id: taiga-forest-classification
+name: Taiga Forest Classification
+tiles:
+  s3_url_and_parameters: s3://maap-ops-dataset/maap-users/alexdevseed/gee/forest_classificiation.json&bidx=1&max_size=1024&resampling_method=nearest&return_mask=true&colormap=%7B%221%22%3A%22%235255A3%22%2C%20%222%22%3A%22%231796A3%22%2C%20%223%22%3A%22%23FDBF6F%22%2C%20%224%22%3A%22%23FF7F00%22%2C%20%225%22%3A%22%23FFFFBF%22%2C%20%226%22%3A%22%23D9EF8B%22%2C%20%227%22%3A%22%2391CF60%22%2C%20%228%22%3A%22%231A9850%22%2C%20%229%22%3A%22%23C4C4C4%22%2C%20%2210%22%3A%22%23FF0000%22%2C%20%2211%22%3A%22%230000FF%22%7D
+paint:
+  raster_opacity: 1
+legend:
+  type: categorical
+  stops:
+    - color: '#5255A3'
+      label: Sparse & Uniform
+    - color: '#1796A3'
+      label: Sparse & Diffuse-gradual
+    - color: '#FDBF6F'
+      label: Sparse & Diffuse-rapid
+    - color: '#FF7F00'
+      label: Sparse & Abrupt
+    - color: '#FFFFBF'
+      label: Open & Uniform
+    - color: '#D9EF8B'
+      label: Open & Diffuse-gradual
+    - color: '#91CF60'
+      label: Open & Diffuse-rapid
+    - color: '#1A9850'
+      label: Open & Abrupt
+    - color: '#C4C4C4'
+      label: Intermediate & Closed
+    - color: '#FF0000'
+      label: Non-forest edge (dry)
+    - color: '#0000FF'
+      label: Non-forest edge (wet)
