@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - demo-deploy
+      - aimee-deploy
 
 jobs:
   run-metadata-generator:
