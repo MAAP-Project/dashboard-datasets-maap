@@ -36,7 +36,7 @@ def handler():
     """
 
     # TODO: defined TypedDicts for these!
-    listed_datasets = config['DATASETS']['STATIC']
+    listed_datasets = config['DATASETS']
     datasets = _gather_json_data(DATASETS_JSON_FILEPATH, filter=listed_datasets)
     if STAC_API_URL:
         stac_datasets = _fetch_stac_items()
