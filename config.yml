@@ -1,9 +1,7 @@
 BUCKET: earthdata-dashboard
-
 DATASET_METADATA_FILENAME: dataset-metadata.json
 DATASETS:
-  STATIC:
-  - forest-classification.json
+  - taiga-forest-classification.json
   - ATL08.json
   - Landsat8.json
   - topo.json
