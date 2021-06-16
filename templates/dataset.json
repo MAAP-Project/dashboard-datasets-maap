@@ -15,7 +15,7 @@
       ]
   },
   "paint": {
-      "raster-opacity": "{{ dataset['paint.raster_opacity'] | default(1) }}"
+      "raster-opacity": "{{ dataset['paint']['raster_opacity'] | default(1) }}"
   },
   "order": "{{ dataset['order'] | default(100000) }}",
   "info": "{{ dataset['info'] | default('') }}"

@@ -1,4 +1,0 @@
-id: modis-aod
-name: MODIS Aerosol Optical Depth
-tiles:
-  s3_url_and_parameters: s3://modis-aod-nasa/2018.01.01.tif&resampling_method=nearest&bidx=1&rescale=0.02199999988079071,0.7147499918937683&colormap_name=gist_earth
