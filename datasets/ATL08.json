@@ -21,9 +21,20 @@
         "circle-color": {
             "property": "HeightAboveGround",
             "stops": [
-                [ 0, "#fff" ], [ 30, "#ffa500" ], [ 80, "#FF0000" ]
+                [0,"#636363"],
+                [2,"#c47e5d"],
+                [4,"#fda467"],
+                [6,"#fed886"],
+                [8,"#fff1a7"],
+                [10,"#f8fcb6"],
+                [12,"#e0f294"],
+                [14,"#b8e077"],
+                [16,"#86ca5f"],
+                [18,"#3aa754"],
+                [20,"#118145"],
+                [22,"#005a32"]
             ]
         },
-        "circle-stroke-color": "orange"
+        "circle-stroke-color": "white"
     }
 }
