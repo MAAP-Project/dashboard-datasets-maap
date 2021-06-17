@@ -1,0 +1,19 @@
+{
+  "id": "srtm-mosaic",
+  "name": "SRTMGL1 Mosaic",
+  "type": "raster",
+  "time_unit": "day",
+  "is_periodic": false,
+  "swatch": {
+      "color": "#189C54",
+      "name": "Dark Green"
+  },
+  "source": {
+      "type": "raster",
+      "tiles": [
+          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=https://h9su0upami.execute-api.us-east-1.amazonaws.com/mosaicjson/mosaics/ea360db6-f34d-40e6-bcda-81e888cf56e4/mosaicjson"
+      ]
+  },
+  "order": 3,
+  "info": ""
+}
