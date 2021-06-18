@@ -1,6 +1,6 @@
 {
   "id": "taiga-forest-classification",
-  "name": "Taiga Forest Classification",
+  "name": "Taiga-Tundra Ecotone",
   "type": "raster",
   "time_unit": "day",
   "is_periodic": "False",
