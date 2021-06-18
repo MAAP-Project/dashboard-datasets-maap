@@ -1,6 +1,6 @@
 {
     "id": "ATL08",
-    "name": "ATL08 ICESat-2",
+    "name": "Canopy Height",
     "type": "vector",
     "is_periodic": false,
     "time_unit": "day",
@@ -13,10 +13,10 @@
             "{vector_tileserver_url}/atl08-mbtiles/atl08-updated/tiles/{z}/{x}/{y}.pbf"
         ]
     },
-    "info": "ATL08 data",
+    "info": "Canopy Height from the ATL08 Land and Vegetation product derived data ICESat-2 sensor.",
     "order": 0,
     "paint": {
-        "circle-radius": 2,
+        "circle-radius": 3,
         "circle-opacity": 0.8,
         "circle-color": {
             "property": "HeightAboveGround",
@@ -36,5 +36,23 @@
             ]
         },
         "circle-stroke-color": "white"
-    }
+    },
+    "legend": {
+        "type": "gradient",
+        "min": "0",
+        "max": "25",
+        "stops": [
+            "#636363",
+            "#c47e5d",
+            "#fda467",
+            "#fed886",
+            "#fff1a7",
+            "#f8fcb6",
+            "#e0f294",
+            "#b8e077",
+            "#86ca5f",
+            "#3aa754",
+            "#118145",
+            "#005a32"
+        ]
 }
