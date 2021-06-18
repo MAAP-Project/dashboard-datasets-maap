@@ -1,21 +1,42 @@
 {
-  "id": "topo",
-  "name": "Elevation covariates derived from Copernicus 30m DEM",
-  "type": "raster",
-  "time_unit": "day",
-  "is_periodic": false,
-  "swatch": {
-      "color": "#189C54",
-      "name": "Dark Green"
-  },
-  "source": {
-      "type": "raster",
-      "tiles": [
-          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=s3://maap-ops-dataset/maap-users/alexdevseed/landsat8/viz/topo_tile_test.json&bidx=2&resampling_method=nearest&rescale=0%2C30&return_mask=true&colormap_name=wistia"
+    "id": "topo",
+    "name": "Topographic Solar Radiation Index (TSRI)",
+    "type": "raster",
+    "time_unit": "day",
+    "is_periodic": false,
+    "swatch": {
+        "color": "#189C54",
+        "name": "Dark Green"
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=s3://maap-ops-dataset/maap-users/alexdevseed/landsat8/viz/topo_tile_test.json&bidx=3&resampling_method=nearest&rescale=0%2C30&return_mask=true&colormap_name=magma"
+        ]
+    },
+    "paint": {
+        "raster-opacity": 0.6
+    },
+    "legend": {
+      "type": "gradient",
+      "min": "0",
+      "max": "1",
+      "stops": [
+          "#000004",
+          "#120d31",
+          "#331067",
+          "#59157e",
+          "#7e2482",
+          "#a3307e",
+          "#c83e73",
+          "#e95462",
+          "#fa7d5e",
+          "#fea973",
+          "#fed395",
+          "#fcfdbf"
       ]
-  },
-  "paint": {
-      "raster-opacity": 0.6
-  },
-  "info": ""
-}
+  
+    },
+    "info": "TSRI (topographic solar radiation index) is a transformation of topographic aspect (directional topographic exposure). It can range from 0 (cold NE slopes) to 1 (warm SW slopes). We include TSRI as a predictor of boreal aboveground biomass density. This biomass covariates was derived from Copernicus 30m DEM"
+  }
+  
