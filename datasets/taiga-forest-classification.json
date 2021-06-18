@@ -67,5 +67,5 @@
       "raster-opacity": "1"
   },
   "order": "100000",
-  "info": ""
+  "info": "The forest structure pattern classification is made up of 11 pixel-level classes formed from the combination of the magnitude and gradient of tree canopy cover. This indicates the pattern of forest structure for each pixel in the bioclimatic envelope."
 }
