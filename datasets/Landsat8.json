@@ -1,6 +1,6 @@
 {
   "id": "LANDSAT8",
-  "name": "Landsat Covariates",
+  "name": "Max Normalized Difference Vegetation Index(NDVI)",
   "type": "raster",
   "time_unit": "day",
   "is_periodic": false,
@@ -15,5 +15,24 @@
       ]
   },
   "order": 3,
-  "info": ""
+  "info": "Maximum NDVI value, and indicator of plant growth, composite from spring 2015-2020. One of the Landsat 8 derived covariates for calculating biomass.",
+  "legend": {
+    "type": "gradient",
+    "min": "0",
+    "max": "1",
+    "stops": [
+        "#440154",
+        "#482173",
+        "#433e85",
+        "#38588c",
+        "#2d708e",
+        "#25858e",
+        "#1e9b8a",
+        "#2ab07f",
+        "#52c569",
+        "#86d549",
+        "#c2df23",
+        "#fde725"
+    ]
+  }
 }
