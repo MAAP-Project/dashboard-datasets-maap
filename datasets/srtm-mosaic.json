@@ -11,7 +11,7 @@
   "source": {
       "type": "raster",
       "tiles": [
-          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=https://h9su0upami.execute-api.us-east-1.amazonaws.com/mosaicjson/mosaics/5af8d57b-34e3-4927-9c68-4b371a3dd30f/mosaicjson"
+          "{titiler_server_url}/mosaicjson/tiles/{z}/{x}/{y}.png?url=https://h9su0upami.execute-api.us-east-1.amazonaws.com/mosaicjson/mosaics/5af8d57b-34e3-4927-9c68-4b371a3dd30f/mosaicjson&rescale=0,4000"
       ]
   },
   "order": 3,
