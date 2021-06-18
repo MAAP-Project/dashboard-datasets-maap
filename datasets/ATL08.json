@@ -1,6 +1,6 @@
 {
     "id": "ATL08",
-    "name": "Canopy Height",
+    "name": "Canopy Height (m)",
     "type": "vector",
     "is_periodic": false,
     "time_unit": "day",
