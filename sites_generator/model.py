@@ -18,4 +18,4 @@ class Site(BaseModel):
 
     def to_json(self, **kwargs):
         return self.json(by_alias=True, exclude_unset=True, **kwargs)
-  
+
