@@ -8,7 +8,6 @@ import html5lib
 import yaml
 from geojson_pydantic.geometries import Polygon
 from geojson_pydantic.types import BBox, Position
-from model import Site
 from pydantic import BaseModel, ValidationError, constr
 
 BASE_PATH = os.path.abspath('.')
