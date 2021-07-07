@@ -38,4 +38,4 @@ jobs:
       - name: Execute the metadata generator script
         env:
           STAGE: ${{ steps.extract_branch.outputs.branch }}
-        run: python -m sites_generator.src.main
+        run: python -m sites_generator.main
