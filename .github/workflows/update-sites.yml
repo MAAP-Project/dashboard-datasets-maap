@@ -4,7 +4,7 @@ on:
     branches:
       - main
       - staging
-      - philvarner/deploy-fix
+      - deploy-fix
 
 jobs:
   run-sites-generator:
