@@ -1,13 +1,14 @@
 """ Sites generator """
-from model import Site
-from typing import Any, Dict, List
-from pydantic import ValidationError
 import json
 import os
+from typing import Any, Dict, List
 
 import boto3
-import yaml
 import html5lib
+import yaml
+from geojson_pydantic.geometries import Polygon
+from geojson_pydantic.types import BBox, Position
+from pydantic import BaseModel, ValidationError, constr
 
 BASE_PATH = os.path.abspath('.')
 config = yaml.load(open(f"{BASE_PATH}/config.yml", "r"), Loader=yaml.FullLoader)
@@ -16,6 +17,20 @@ SITES_INPUT_FILEPATH = os.path.join(BASE_PATH, "sites")
 
 SITES_OUTPUT_FILENAME = f"{os.environ.get('STAGE', 'local')}-site-metadata.json"
 
+class Site(BaseModel):
+
+    id: constr(min_length=3)
+    label: constr(min_length=3)
+    center: Position
+    polygon: Polygon
+    bounding_box: BBox
+    indicators: List[str]
+
+    def to_dict(self, **kwargs):
+        return self.dict(by_alias=True, exclude_unset=True, **kwargs)
+
+    def to_json(self, **kwargs):
+        return self.json(by_alias=True, exclude_unset=True, **kwargs)
 
 def create_sites_json():
     """

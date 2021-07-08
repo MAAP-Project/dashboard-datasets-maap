@@ -6,7 +6,7 @@ on:
       - staging
 
 jobs:
-  run-metadata-generator:
+  run-datasets-generator:
     runs-on: ubuntu-latest
   
     steps:
