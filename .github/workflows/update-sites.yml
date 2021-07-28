@@ -1,12 +1,13 @@
-name: Generate & update the dataset json file in the s3 folder specified in config.yml
+name: Generate & update the dashboard sites json file in the s3 folder specified in config.yml
 on:
   push:
     branches:
       - main
       - staging
+      - deploy-fix
 
 jobs:
-  run-datasets-generator:
+  run-sites-generator:
     runs-on: ubuntu-latest
   
     steps:
@@ -38,4 +39,4 @@ jobs:
       - name: Execute the metadata generator script
         env:
           STAGE: ${{ steps.extract_branch.outputs.branch }}
-        run: python -m dataset_metadata_generator.src.main
+        run: python -m sites_generator.src.main
