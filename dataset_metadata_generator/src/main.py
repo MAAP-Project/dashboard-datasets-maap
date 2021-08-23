@@ -10,9 +10,11 @@ import boto3
 import requests
 import yaml
 
+from config import config
+
 
 BASE_PATH = os.path.abspath('.')
-config = yaml.load(open(f"{BASE_PATH}/config.yml", 'r'), Loader=yaml.FullLoader)
+config = yaml.safe_load(config.generate())
 
 DATASETS_JSON_FILEPATH = os.path.join(BASE_PATH, "datasets")
 
