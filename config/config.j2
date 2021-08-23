@@ -1,0 +1,10 @@
+BUCKET: earthdata-dashboard
+DATASET_METADATA_FILENAME: dataset-metadata.json
+DATASETS:
+  {% for dataset in datasets %}
+  - {{ dataset }}
+  {% endfor %}
+SITES:
+  {% for site in sites %}
+  - {{ site }}
+  {% endfor %}

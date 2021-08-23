@@ -10,8 +10,11 @@ from geojson_pydantic.geometries import Polygon
 from geojson_pydantic.types import BBox, Position
 from pydantic import BaseModel, ValidationError, constr
 
+from config import config
+
+
 BASE_PATH = os.path.abspath('.')
-config = yaml.load(open(f"{BASE_PATH}/config.yml", "r"), Loader=yaml.FullLoader)
+config = yaml.safe_load(config.generate())
 
 SITES_INPUT_FILEPATH = os.path.join(BASE_PATH, "sites")
 
